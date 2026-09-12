@@ -173,34 +173,18 @@ else
     ${ServiceName}:${release}
 fi
 
-mkdir -p /etc/easypanel/traefik/config
-cat > /etc/easypanel/traefik/config/${ServiceName}.yaml <<'TRAEFIK_CFG'
-http:
-  routers:
-    ${ServiceName}-http:
-      rule: Host(`${PublicHost}`) || Host(`${AltHost}`)
-      entryPoints: [http]
-      middlewares: [redirect-to-https]
-      service: ${ServiceName}
-    ${ServiceName}-https:
-      rule: Host(`${PublicHost}`) || Host(`${AltHost}`)
-      entryPoints: [https]
-      service: ${ServiceName}
-      tls:
-        certResolver: letsencrypt
-  services:
-    ${ServiceName}:
-      loadBalancer:
-        servers:
-          - url: http://${ServiceName}:5055
-TRAEFIK_CFG
-
 rm -f /tmp/dentist-ai-automation-${release}.tar.gz
 echo "=== Docker Service PS ==="
 docker service ps ${ServiceName} --format 'table {{.Name}}\t{{.CurrentState}}\t{{.Error}}'
 "@
 
     & ssh.exe @sshOpts "root@$HostName" $remoteScript
+
+    # Upload Traefik routing configuration to Hostinger VPS via SCP
+    $traefikConfigPath = Join-Path $PSScriptRoot "dentist-ai-automation.yaml"
+    Write-Host "`nUploading Traefik routing configuration to Hostinger VPS..." -ForegroundColor Cyan
+    & scp.exe @scpOpts $traefikConfigPath "root@${HostName}:/etc/easypanel/traefik/config/${ServiceName}.yaml"
+    Write-Host "  [OK] Traefik routing configuration active." -ForegroundColor Green
 
     Write-Host "`n=================================================================" -ForegroundColor Green
     Write-Host "  DENTIST AUTOMATION DEPLOYMENT COMPLETED SUCCESSFULLY!" -ForegroundColor Green
