@@ -1,0 +1,36 @@
+{
+  "name": "dentist-workflow-automation",
+  "version": "1.0.0",
+  "description": "Production-oriented Dentist Workflow Automation product with AI chatbot, lead qualification, real-time calendar scheduling, and payment deposit collection.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest --runInBand --verbose"
+  },
+  "keywords": [
+    "dental-automation",
+    "ai-chatbot",
+    "chatgpt",
+    "appointment-scheduling",
+    "lead-qualification",
+    "payment-collection",
+    "whatsapp-ready"
+  ],
+  "author": "Hiranyam AI Labs",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 10000
+  }
+}

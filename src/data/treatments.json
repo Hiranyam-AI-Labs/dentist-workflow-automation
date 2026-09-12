@@ -1,0 +1,187 @@
+{
+  "clinic_profile": {
+    "clinic_name": "Dr. XYZ Multispeciality Dental & Implant Clinic",
+    "dentist_name": "Dr. XYZ",
+    "qualification": "BDS, MDS - Prosthodontics & Implantology",
+    "experience_years": 15,
+    "phone": "+91 98765 43210",
+    "emergency_phone": "+91 98765 43219",
+    "email": "appointments@drxyzdental.com",
+    "address": "Suite 402, Lotus Healthcare Park, Linking Road, Bandra West, Mumbai, MH 400050",
+    "landmarks": "Opposite Bandra Metro Station, Above Blue Dart",
+    "google_maps_url": "https://maps.google.com/?q=Bandra+West+Dental+Care",
+    "consultation_fee": 800,
+    "booking_deposit": 500,
+    "deposit_policy": "Deposit of ₹500 is 100% adjustable against your treatment bill or fully refundable if cancelled 4 hours prior to appointment.",
+    "operating_hours": {
+      "monday_saturday": {
+        "morning": "09:30 AM - 01:30 PM",
+        "evening": "04:30 PM - 08:30 PM"
+      },
+      "sunday": {
+        "morning": "10:00 AM - 02:00 PM",
+        "evening": "Closed"
+      }
+    }
+  },
+  "ad_campaigns": {
+    "CLEANING_50_OFF": {
+      "campaign_id": "AD-CLEAN-50",
+      "headline": "Sparkling Smile Special: 50% Off Ultrasonic Teeth Cleaning & Polish",
+      "offer_price": 499,
+      "regular_price": 1500,
+      "service_key": "teeth_cleaning",
+      "hook_message": "Welcome! You came through our 50% Off Teeth Cleaning offer (Only ₹499 instead of ₹1,500). How may Dr. XYZ assist you today?",
+      "call_to_action": "Claim ₹499 Cleaning Slot"
+    },
+    "RCT_PAIN_FREE": {
+      "campaign_id": "AD-RCT-COMFORT",
+      "headline": "Stop Toothache in 45 Mins: 100% Pain-Free Single Sitting Root Canal",
+      "offer_price": 3500,
+      "regular_price": 5000,
+      "service_key": "root_canal",
+      "hook_message": "Suffering from severe tooth pain or sensitivity? We noticed you checked our 100% Pain-Free Single Sitting Root Canal ad. Dr. XYZ has performed 4,500+ comfortable RCTs. Would you like a priority emergency slot?",
+      "call_to_action": "Relieve My Tooth Pain"
+    },
+    "IMPLANT_FREE_CONSULT": {
+      "campaign_id": "AD-IMPLANT-LIFETIME",
+      "headline": "Replace Missing Teeth Forever: Lifetime Warranty German & Swiss Dental Implants",
+      "offer_price": 19999,
+      "regular_price": 30000,
+      "service_key": "dental_implants",
+      "hook_message": "Missing teeth affecting your chewing or smile? You tapped on our Dental Implant Consultation with Free 3D OPG X-ray Scan (Value ₹1,200). Let's review Dr. XYZ's next available implant consultation slot.",
+      "call_to_action": "Book Free 3D Implant Consult"
+    },
+    "DIGITAL_XRAY_OFFER": {
+      "campaign_id": "AD-XRAY-DIGITAL",
+      "headline": "Instant HD Dental RVG X-ray & Complete Oral Health Checkup for ₹299",
+      "offer_price": 299,
+      "regular_price": 800,
+      "service_key": "dental_xray",
+      "hook_message": "Hello! Looking for an accurate HD digital dental X-ray and checkup? Our Bandra clinic offers instant digital RVG X-rays for just ₹299 with zero wait time.",
+      "call_to_action": "Schedule X-Ray & Checkup"
+    },
+    "ALIGNERS_EMI": {
+      "campaign_id": "AD-ALIGN-SMILE",
+      "headline": "Straighten Your Teeth Invisibly: US-FDA Approved Clear Aligners from ₹2,999/month EMI",
+      "offer_price": 45000,
+      "regular_price": 65000,
+      "service_key": "clear_aligners",
+      "hook_message": "Dreaming of a straight, wire-free smile? You saw our Invisible Clear Aligners promotion (0% EMI available). Would you like Dr. XYZ to show you a 3D digital smile simulation?",
+      "call_to_action": "Book 3D Smile Scan"
+    },
+    "GENERAL_INTAKE": {
+      "campaign_id": "AD-GENERAL-DENTAL",
+      "headline": "Comprehensive Family Dental Care with Dr. XYZ",
+      "offer_price": 800,
+      "regular_price": 800,
+      "service_key": "general_consultation",
+      "hook_message": "Welcome to Dr. XYZ Multispeciality Dental Clinic! How can we help you achieve healthy teeth and a confident smile today?",
+      "call_to_action": "Book Clinic Visit"
+    }
+  },
+  "treatments": [
+    {
+      "key": "teeth_cleaning",
+      "name": "Ultrasonic Teeth Cleaning & Polishing",
+      "category": "Preventive Dentistry",
+      "starting_price": 499,
+      "standard_price": 1500,
+      "duration_minutes": 30,
+      "short_description": "Removes stubborn tartar, yellow plaque, smoke stains, and tea/coffee pigmentation using gentle ultrasonic vibrations without harming enamel.",
+      "is_painful": "Completely painless. Most patients describe a mild tickling sensation.",
+      "recovery_time": "Immediate. You can eat and drink 30 minutes after fluoride application.",
+      "recommended_frequency": "Every 6 months for healthy gums and fresh breath."
+    },
+    {
+      "key": "root_canal",
+      "name": "Single-Sitting Pain-Free Root Canal Treatment (RCT)",
+      "category": "Endodontics",
+      "starting_price": 3500,
+      "standard_price": 5000,
+      "duration_minutes": 45,
+      "short_description": "Saves infected or severely decayed teeth. Performed under advanced micro-endodontic rotary systems with computerized painless local anesthesia.",
+      "is_painful": "100% pain-free during the procedure thanks to targeted modern anesthetics. Eliminates existing toothache permanently.",
+      "recovery_time": "Mild tenderness for 24 hours managed with mild pain relievers. Crown placement recommended 3-5 days later.",
+      "warranty": "Crowns come with 5 to 15 years replacement warranty."
+    },
+    {
+      "key": "dental_xray",
+      "name": "Digital HD RVG X-Rays & Panoramic OPG Scan",
+      "category": "Diagnostics",
+      "starting_price": 299,
+      "standard_price": 800,
+      "duration_minutes": 15,
+      "short_description": "Ultra-low radiation digital dental imaging providing instant HD views of tooth roots, hidden cavities, bone density, and impacted wisdom teeth.",
+      "is_painful": "Non-invasive and zero sensation.",
+      "recovery_time": "Instant results viewed live on chairside HD monitors.",
+      "safety": "90% less radiation than conventional film X-rays."
+    },
+    {
+      "key": "tooth_extraction",
+      "name": "Painless Tooth & Impacted Wisdom Tooth Extraction",
+      "category": "Oral Surgery",
+      "starting_price": 1500,
+      "standard_price": 4500,
+      "duration_minutes": 30,
+      "short_description": "Gentle surgical removal of decayed, damaged, or impacted wisdom teeth that cause swelling, cheek biting, or jaw pain.",
+      "is_painful": "Virtually painless with deep local anesthesia. Sedation options available for nervous patients.",
+      "recovery_time": "2-3 days for initial healing; soft diet for 48 hours.",
+      "post_op_kit": "Free post-op ice pack, medicated gauze, and prescription supplied."
+    },
+    {
+      "key": "cosmetic_dentistry",
+      "name": "Cosmetic Smile Makeover & Teeth Whitening",
+      "category": "Aesthetic Dentistry",
+      "starting_price": 4999,
+      "standard_price": 12000,
+      "duration_minutes": 45,
+      "short_description": "In-clinic laser teeth whitening (up to 8 shades lighter in 45 mins), porcelain veneers, and composite bonding for gaps or chipped teeth.",
+      "is_painful": "Painless with optional desensitizing gel application.",
+      "recovery_time": "Immediate radiant smile. Avoid dark curries, red wine, and coffee for 48 hours.",
+      "longevity": "Results typically last 1 to 3 years with good oral hygiene."
+    },
+    {
+      "key": "dental_implants",
+      "name": "Swiss & German Titanium Dental Implants",
+      "category": "Prosthodontics",
+      "starting_price": 19999,
+      "standard_price": 32000,
+      "duration_minutes": 60,
+      "short_description": "The gold standard permanent replacement for missing teeth. Integrates directly into jawbone with natural look, bite power, and lifetime durability.",
+      "is_painful": "Easier and less painful than a tooth extraction; done under gentle local anesthesia.",
+      "recovery_time": "Minor swelling for 2-3 days. Full osseointegration over 8-12 weeks.",
+      "warranty": "Lifetime warranty on titanium implant fixture."
+    },
+    {
+      "key": "clear_aligners",
+      "name": "Invisible Clear Aligners (Wire-Free Orthodontics)",
+      "category": "Orthodontics",
+      "starting_price": 45000,
+      "standard_price": 75000,
+      "duration_minutes": 30,
+      "short_description": "Transparent, removable plastic trays that straighten crooked teeth without ugly metal wires or dietary restrictions.",
+      "is_painful": "Gentle pressure when switching to a new tray every 10-14 days.",
+      "recovery_time": "Zero downtime. Wear 20-22 hours daily.",
+      "financing": "Flexible 0% EMI plans from ₹2,999/month."
+    },
+    {
+      "key": "pediatric_dentistry",
+      "name": "Pediatric Dentistry (Kids Milk Teeth Care)",
+      "category": "Pediatric",
+      "starting_price": 800,
+      "standard_price": 1800,
+      "duration_minutes": 30,
+      "short_description": "Friendly, fear-free treatments for children including cavity fillings, fluoride varnish, space maintainers, and habit-breaking appliances.",
+      "is_painful": "Fun, playful atmosphere with child-friendly gentle touch.",
+      "recovery_time": "Immediate."
+    }
+  ],
+  "objection_answers": {
+    "pain": "At Dr. XYZ Dental Care, we specialize in painless dentistry. We use computer-controlled numbing gel, ultra-fine needles, and modern rotary tools so you won't feel anything during treatments like Root Canal or Implants.",
+    "price": "We offer complete transparency with no hidden charges. Our promotional ad rates (such as ₹499 Cleaning or ₹3,500 RCT) are locked upon booking. We also offer 0% interest EMI options for treatments over ₹15,000.",
+    "deposit": "The ₹500 booking deposit guarantees your dedicated doctor time slot, eliminates waiting, and is 100% adjusted toward your clinic bill upon arrival. It is also fully refundable if cancelled 4 hours prior.",
+    "experience": "Dr. XYZ has over 15 years of clinical expertise, holds an MDS in Prosthodontics & Implantology, and has successfully treated over 12,000 satisfied patients in Bandra West.",
+    "safety": "Our clinic follows strict 6-tier sterilization protocols compliant with international OSHA and CDC medical guidelines, using class-B autoclaves and 100% disposable patient kits."
+  }
+}

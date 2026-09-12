@@ -1,0 +1,40 @@
+{
+  "clinic_id": "CLN-XYZ-BANDRA",
+  "clinic_name": "Dr. XYZ Multispeciality Dental & Implant Clinic",
+  "head_doctor": "Dr. XYZ (BDS, MDS)",
+  "specialization": "Prosthodontist & Oral Implantologist",
+  "dental_chairs_count": 3,
+  "slot_interval_minutes": 30,
+  "slot_hold_duration_minutes": 10,
+  "deposit_required_inr": 500,
+  "consultation_fee_inr": 800,
+  "currency": "INR",
+  "phone": "+91 98765 43210",
+  "emergency_hotline": "+91 98765 43219",
+  "whatsapp_business_number": "+91 98765 43210",
+  "location": {
+    "city": "Mumbai",
+    "neighborhood": "Bandra West",
+    "address": "Suite 402, Lotus Healthcare Park, Linking Road, Bandra West, Mumbai, MH 400050",
+    "landmarks": "Opposite Bandra Metro Station, Above Blue Dart",
+    "coordinates": {
+      "latitude": 19.0596,
+      "longitude": 72.8295
+    }
+  },
+  "working_hours": {
+    "monday": { "morning": ["09:30", "13:30"], "evening": ["16:30", "20:30"], "isOpen": true },
+    "tuesday": { "morning": ["09:30", "13:30"], "evening": ["16:30", "20:30"], "isOpen": true },
+    "wednesday": { "morning": ["09:30", "13:30"], "evening": ["16:30", "20:30"], "isOpen": true },
+    "thursday": { "morning": ["09:30", "13:30"], "evening": ["16:30", "20:30"], "isOpen": true },
+    "friday": { "morning": ["09:30", "13:30"], "evening": ["16:30", "20:30"], "isOpen": true },
+    "saturday": { "morning": ["09:30", "13:30"], "evening": ["16:30", "20:30"], "isOpen": true },
+    "sunday": { "morning": ["10:00", "14:00"], "evening": null, "isOpen": true }
+  },
+  "channel_deployment": {
+    "initial_channel": "web_chat",
+    "future_channel": "meta_whatsapp_cloud_api",
+    "waba_version": "v21.0",
+    "meta_webhook_path": "/api/webhooks/whatsapp"
+  }
+}

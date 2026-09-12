@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  dentist-ai-automation:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dentist-ai-automation:latest
+    container_name: dentist-ai-automation
+    restart: unless-stopped
+    ports:
+      - "5055:5055"
+    environment:
+      - NODE_ENV=production
+      - PORT=5055
+      - OPENAI_API_KEY=MOCK_OPENAI_KEY
+      - OPENAI_DEFAULT_MODEL=gpt-4o-mini
+      - DEFAULT_DEPOSIT_INR=500
+    networks:
+      - easypanel
+    deploy:
+      resources:
+        limits:
+          memory: 384M
+        reservations:
+          memory: 64M
+
+networks:
+  easypanel:
+    external: true

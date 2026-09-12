@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. XYZ Multispeciality Dental Care — AI Patient Intake & Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- TOP HEADER -->
+    <header class="clinic-header">
+      <div class="header-content">
+        <div class="clinic-branding">
+          <div class="clinic-logo-badge">🦷</div>
+          <div class="clinic-titles">
+            <div class="clinic-name-row">
+              <h1>Dr. XYZ Multispeciality Dental & Implant Clinic</h1>
+              <span class="verified-badge">✓ Verified Clinic</span>
+            </div>
+            <p class="clinic-subtitle">Dr. XYZ (BDS, MDS — Oral Implantology & Prosthodontics) • 15+ Yrs Exp • Bandra West, Mumbai</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <div class="hotline-badge">
+            <span class="hotline-icon">📞</span>
+            <div class="hotline-text">
+              <span class="hotline-label">Emergency Helpline</span>
+              <a href="tel:+919876543219" class="hotline-number">+91 98765 43219</a>
+            </div>
+          </div>
+          <button id="resetDemoBtn" class="btn-secondary btn-sm" title="Reset chat for new patient demo">🔄 Reset Demo</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- AD INGRESS CAMPAIGN SIMULATOR BAR -->
+    <section class="ad-ingress-bar">
+      <div class="ad-ingress-container">
+        <div class="ad-ingress-label">
+          <span class="ad-pulse"></span>
+          <strong>Simulate Ad Ingress:</strong>
+        </div>
+        <div class="ad-campaign-chips" id="campaignChips">
+          <button class="chip active" data-campaign="CLEANING_50_OFF">⚡ 50% Off Teeth Cleaning (₹499)</button>
+          <button class="chip" data-campaign="RCT_PAIN_FREE">🦷 Pain-Free Root Canal</button>
+          <button class="chip" data-campaign="IMPLANT_FREE_CONSULT">💎 Dental Implants + Free 3D Scan</button>
+          <button class="chip" data-campaign="DIGITAL_XRAY_OFFER">📸 HD Digital RVG X-Ray (₹299)</button>
+          <button class="chip" data-campaign="ALIGNERS_EMI">✨ Invisible Aligners (₹2,999/mo)</button>
+          <button class="chip" data-campaign="GENERAL_INTAKE">🏥 General Checkup</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN TWO-COLUMN CONTAINER -->
+    <main class="main-content">
+      <!-- LEFT: INTERACTIVE AI CHATBOT -->
+      <section class="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+          <div class="assistant-profile">
+            <div class="avatar-wrapper">
+              <div class="assistant-avatar">👩‍⚕️</div>
+              <span class="online-indicator"></span>
+            </div>
+            <div class="assistant-meta">
+              <h3>Dr. XYZ's Dental AI Assistant</h3>
+              <p class="assistant-status">Online • Instant Answers • Verified Appointments</p>
+            </div>
+          </div>
+          <div class="chat-channel-badge">
+            <span class="channel-pill web-pill">🌐 Web Chat Pilot</span>
+            <span class="channel-pill wa-ready-pill" title="Architecture is 100% WhatsApp Cloud API ready">📱 WhatsApp Ready</span>
+          </div>
+        </div>
+
+        <!-- Ad Context Banner -->
+        <div id="activeAdBanner" class="active-ad-banner">
+          <span class="ad-icon">📢</span>
+          <div class="ad-banner-text">
+            <span class="ad-tag">Active Social Media Promotion:</span>
+            <span id="adHeadline" class="ad-headline-text">Sparkling Smile Special: 50% Off Ultrasonic Teeth Cleaning & Polish</span>
+          </div>
+          <span id="adPriceBadge" class="ad-price-pill">Only ₹499</span>
+        </div>
+
+        <!-- Chat Message Log -->
+        <div class="chat-messages" id="chatMessages">
+          <!-- Messages dynamically populated by app.js -->
+        </div>
+
+        <!-- Quick Reply Chips -->
+        <div class="quick-replies" id="quickReplies">
+          <!-- Quick actions dynamically populated -->
+        </div>
+
+        <!-- Chat Input Bar -->
+        <form class="chat-input-bar" id="chatForm">
+          <input 
+            type="text" 
+            id="messageInput" 
+            placeholder="Type your dental symptoms or questions (e.g., 'Is teeth cleaning painful?')..." 
+            autocomplete="off"
+            required 
+          />
+          <button type="submit" id="sendBtn" class="btn-primary send-button">
+            <span>Send</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </section>
+
+      <!-- RIGHT: CLINICAL INTEL, CALENDAR & TELEMETRY PANEL -->
+      <aside class="side-panel">
+        <!-- Lead Intel & Conversion Card -->
+        <div class="panel-card lead-intel-card">
+          <div class="card-header">
+            <h4>Patient Lead Intelligence</h4>
+            <span id="leadTierBadge" class="tier-badge cold">COLD LEAD</span>
+          </div>
+          <div class="lead-score-row">
+            <div class="score-circle">
+              <span id="leadScoreValue" class="score-num">20</span>
+              <span class="score-max">/100</span>
+            </div>
+            <div class="score-details">
+              <div class="conversion-stage-label">Funnel Stage:</div>
+              <div id="conversionStageText" class="conversion-stage-val">Inquiry & Objection Handling</div>
+              <div class="score-bar-track">
+                <div id="leadScoreBar" class="score-bar-fill" style="width: 20%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="triage-status-row">
+            <span class="triage-label">Clinical Triage:</span>
+            <span id="triageBadge" class="triage-badge normal">🟢 Routine Consultation</span>
+          </div>
+        </div>
+
+        <!-- Doctor's Live Schedule Card -->
+        <div class="panel-card doctor-schedule-card">
+          <div class="card-header">
+            <h4>Dr. XYZ's Real-Time Calendar</h4>
+            <button id="refreshScheduleBtn" class="btn-icon" title="Refresh Slots">↻</button>
+          </div>
+          <p class="schedule-sub">Live booking engine preventing collisions and no-shows</p>
+          <div class="quick-slots-container" id="sidePanelSlots">
+            <!-- Populated dynamically -->
+            <div class="slot-loading">Loading Dr. XYZ's slots...</div>
+          </div>
+          <div class="no-show-policy-box">
+            <span class="policy-icon">🛡️</span>
+            <p><strong>Zero No-Show Guarantee:</strong> ₹500 booking deposit secures doctor chair time and is 100% adjusted against your treatment bill.</p>
+          </div>
+        </div>
+
+        <!-- LLM Cost & Telemetry Card -->
+        <div class="panel-card telemetry-card">
+          <div class="card-header">
+            <h4>LLM Telemetry & Forex Cost</h4>
+            <span class="engine-badge" id="telemetryEngine">ChatGPT gpt-4o-mini</span>
+          </div>
+          <div class="telemetry-grid">
+            <div class="telemetry-item">
+              <span class="telem-lbl">Tokens Processed</span>
+              <strong id="telemTokens">180</strong>
+            </div>
+            <div class="telemetry-item">
+              <span class="telem-lbl">Inference Cost</span>
+              <strong id="telemCost">₹0.0142</strong>
+            </div>
+            <div class="telemetry-item">
+              <span class="telem-lbl">USD/INR Rate</span>
+              <strong id="telemForex">₹84.50</strong>
+            </div>
+            <div class="telemetry-item">
+              <span class="telem-lbl">AI Latency</span>
+              <strong id="telemLatency">85ms</strong>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- IN-CHAT EMBEDDED MODAL: PAYMENT CHECKOUT DRAWER -->
+  <div id="paymentModal" class="modal-backdrop hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">💳</span>
+          <div>
+            <h3>Secure Appointment Deposit</h3>
+            <p class="modal-subtitle">Guarantees Dr. XYZ's time & 100% adjusted on arrival</p>
+          </div>
+        </div>
+        <button id="closePaymentModalBtn" class="modal-close-btn">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="deposit-summary-box">
+          <div class="summary-row">
+            <span>Selected Appointment Slot:</span>
+            <strong id="modalSlotTime">Today, 11:30 AM</strong>
+          </div>
+          <div class="summary-row">
+            <span>Doctor:</span>
+            <strong>Dr. XYZ (BDS, MDS)</strong>
+          </div>
+          <div class="summary-row">
+            <span>Commitment Deposit:</span>
+            <strong class="highlight-deposit">₹500</strong>
+          </div>
+          <div class="deposit-guarantee-note">
+            ✓ 100% Deducted from Treatment Bill &nbsp;|&nbsp; ✓ Refundable 4h prior
+          </div>
+        </div>
+
+        <div class="patient-form-group">
+          <label for="patientFullName">Patient Full Name:</label>
+          <input type="text" id="patientFullName" placeholder="e.g. Vikramaditya Shinde" value="Vikramaditya Shinde" required>
+        </div>
+        <div class="patient-form-group">
+          <label for="patientMobile">Mobile Number (For WhatsApp / SMS Confirmation):</label>
+          <input type="tel" id="patientMobile" placeholder="e.g. +91 98201 23456" value="+91 98201 23456" required>
+        </div>
+
+        <div class="payment-methods-tabs">
+          <div class="upi-option active">
+            <div class="upi-header">
+              <span>Scan UPI QR Code (GPay, PhonePe, Paytm):</span>
+            </div>
+            <div class="qr-code-placeholder">
+              <!-- Visual Mock UPI QR -->
+              <div class="qr-box">
+                <svg width="140" height="140" viewBox="0 0 100 100" fill="currentColor">
+                  <rect x="10" y="10" width="25" height="25" fill="#1e293b"/>
+                  <rect x="15" y="15" width="15" height="15" fill="#ffffff"/>
+                  <rect x="18" y="18" width="9" height="9" fill="#1e293b"/>
+                  <rect x="65" y="10" width="25" height="25" fill="#1e293b"/>
+                  <rect x="70" y="15" width="15" height="15" fill="#ffffff"/>
+                  <rect x="73" y="18" width="9" height="9" fill="#1e293b"/>
+                  <rect x="10" y="65" width="25" height="25" fill="#1e293b"/>
+                  <rect x="15" y="70" width="15" height="15" fill="#ffffff"/>
+                  <rect x="18" y="73" width="9" height="9" fill="#1e293b"/>
+                  <rect x="45" y="15" width="10" height="10" fill="#1e293b"/>
+                  <rect x="45" y="35" width="15" height="15" fill="#1e293b"/>
+                  <rect x="45" y="60" width="10" height="25" fill="#1e293b"/>
+                  <rect x="65" y="45" width="25" height="10" fill="#1e293b"/>
+                  <rect x="65" y="65" width="15" height="25" fill="#1e293b"/>
+                </svg>
+                <div class="qr-upi-label">UPI ID: drxyz.dentist@icici</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="simulatePayBtn" class="btn-success btn-block">
+          <span>✓ Pay ₹500 Deposit & Confirm Slot</span>
+        </button>
+        <p class="secure-checkout-text">🔒 256-bit Encrypted Medical Reservation System</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+http:
+  routers:
+    dentist-ai-automation-http:
+      rule: Host(`dentist-ai.bjttvo.easypanel.host`) || Host(`dentist.bjttvo.easypanel.host`)
+      entryPoints: [http]
+      middlewares: [redirect-to-https]
+      service: dentist-ai-automation
+    dentist-ai-automation-https:
+      rule: Host(`dentist-ai.bjttvo.easypanel.host`) || Host(`dentist.bjttvo.easypanel.host`)
+      entryPoints: [https]
+      service: dentist-ai-automation
+      tls:
+        certResolver: letsencrypt
+  services:
+    dentist-ai-automation:
+      loadBalancer:
+        servers:
+          - url: http://dentist-ai-automation:5055
