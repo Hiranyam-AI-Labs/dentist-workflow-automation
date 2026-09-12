@@ -69,52 +69,52 @@ if (-not $hasKey) {
     Write-Host "`n[3/4] Building Docker Container & Updating Swarm Service..." -ForegroundColor Cyan
     $remoteScript = @"
 set -eu
-mkdir -p /opt/$ServiceName/releases/$release
-tar -xzf /tmp/dentist-ai-automation-$release.tar.gz -C /opt/$ServiceName/releases/$release
-cd /opt/$ServiceName/releases/$release
-docker build -t $ServiceName:$release .
+mkdir -p /opt/${ServiceName}/releases/${release}
+tar -xzf /tmp/dentist-ai-automation-${release}.tar.gz -C /opt/${ServiceName}/releases/${release}
+cd /opt/${ServiceName}/releases/${release}
+docker build -t ${ServiceName}:${release} .
 
-if docker service inspect $ServiceName >/dev/null 2>&1; then
-  echo "Updating existing service $ServiceName..."
-  docker service update --image $ServiceName:$release --update-order start-first $ServiceName
+if docker service inspect ${ServiceName} >/dev/null 2>&1; then
+  echo "Updating existing service ${ServiceName}..."
+  docker service update --image ${ServiceName}:${release} --update-order start-first ${ServiceName}
 else
-  echo "Creating new Docker Swarm service $ServiceName on network easypanel..."
+  echo "Creating new Docker Swarm service ${ServiceName} on network easypanel..."
   docker service create \
-    --name $ServiceName \
+    --name ${ServiceName} \
     --network easypanel \
-    --publish mode=ingress,published=$Port,target=5055 \
+    --publish mode=ingress,published=${Port},target=5055 \
     --replicas 1 \
     --restart-condition any \
     --update-order start-first \
     --limit-memory 384M \
     --reserve-memory 64M \
-    $ServiceName:$release
+    ${ServiceName}:${release}
 fi
 
-cat > /etc/easypanel/traefik/config/$ServiceName.yaml <<'TRAEFIK_CFG'
+cat > /etc/easypanel/traefik/config/${ServiceName}.yaml <<'TRAEFIK_CFG'
 http:
   routers:
-    $ServiceName-http:
-      rule: Host(`$PublicHost`) || Host(`$AltHost`)
+    ${ServiceName}-http:
+      rule: Host(`${PublicHost}`) || Host(`${AltHost}`)
       entryPoints: [http]
       middlewares: [redirect-to-https]
-      service: $ServiceName
-    $ServiceName-https:
-      rule: Host(`$PublicHost`) || Host(`$AltHost`)
+      service: ${ServiceName}
+    ${ServiceName}-https:
+      rule: Host(`${PublicHost}`) || Host(`${AltHost}`)
       entryPoints: [https]
-      service: $ServiceName
+      service: ${ServiceName}
       tls:
         certResolver: letsencrypt
   services:
-    $ServiceName:
+    ${ServiceName}:
       loadBalancer:
         servers:
-          - url: http://$ServiceName:5055
+          - url: http://${ServiceName}:5055
 TRAEFIK_CFG
 
-rm -f /tmp/dentist-ai-automation-$release.tar.gz
+rm -f /tmp/dentist-ai-automation-${release}.tar.gz
 echo "Service Status:"
-docker service ps $ServiceName --format '{{.Name}}|{{.CurrentState}}|{{.Error}}'
+docker service ps ${ServiceName} --format '{{.Name}}|{{.CurrentState}}|{{.Error}}'
 "@
 
     & ssh @sshOpts "root@$HostName" $remoteScript
