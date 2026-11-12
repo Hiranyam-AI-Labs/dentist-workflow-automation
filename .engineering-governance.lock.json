@@ -1,0 +1,278 @@
+{
+  "baseline_version": "2026.11.11.1",
+  "files": {
+    "AGENTS.md": {
+      "kind": "block",
+      "sha256": "6629444fca6aee04572d9ae9bdc1f5c29cd682510429ead2e2ef1c0036436872"
+    },
+    "CLAUDE.md": {
+      "kind": "block",
+      "sha256": "6629444fca6aee04572d9ae9bdc1f5c29cd682510429ead2e2ef1c0036436872"
+    },
+    "GEMINI.md": {
+      "kind": "block",
+      "sha256": "6629444fca6aee04572d9ae9bdc1f5c29cd682510429ead2e2ef1c0036436872"
+    },
+    "docs/engineering/LOOP-ENGINEERING.md": {
+      "kind": "file",
+      "sha256": "6e0b9457f3f610c1f6636e1065ced54c36940a88ec4705899634b01b0b3601e0"
+    },
+    "docs/engineering/TESTING_STRATEGY.md": {
+      "kind": "file",
+      "sha256": "3ff0e157b4d08c20d58f2664337c91616c64ecc13e6b6173847a5761b60791ce"
+    },
+    "docs/engineering/baseline/ai-automation-standards.md": {
+      "kind": "file",
+      "sha256": "b051d19a764b9d6315c25a401a75dce7a999a0cc4e55f4db3d5741b68c4764d6"
+    },
+    "docs/engineering/baseline/ai-chatbot-training-kill-critic-standard.md": {
+      "kind": "file",
+      "sha256": "f659591d2fdd3121e5af8768e8973db7ac6a644a322fa59e5a68cc38f62d6972"
+    },
+    "docs/engineering/baseline/ai-image-and-visual-design-standards.md": {
+      "kind": "file",
+      "sha256": "4749f7816b9513b6f202bbfb994092598770f0c6dcb190be79f570364c270861"
+    },
+    "docs/engineering/baseline/api-standards.md": {
+      "kind": "file",
+      "sha256": "158bdae268399c48e0c0a0dec503220719ffbe96c7133df68beb43e32288a484"
+    },
+    "docs/engineering/baseline/architecture-standards.md": {
+      "kind": "file",
+      "sha256": "60a5624970312a3d9d3bc49c71602a51ca7eb0c0c55cab6812fdd11f80a6d135"
+    },
+    "docs/engineering/baseline/autonomous-engineering-playbook.md": {
+      "kind": "file",
+      "sha256": "217e9f3b9b6590b731c8e48d5fda23552554a36f64d711844dfc0ecb77394ec6"
+    },
+    "docs/engineering/baseline/brand-endorsement-standards.md": {
+      "kind": "file",
+      "sha256": "85a0909512f1a13201b1669852616fe8fa10b0e885c1be717656f30f70c70c04"
+    },
+    "docs/engineering/baseline/browser-testing-standard.md": {
+      "kind": "file",
+      "sha256": "71536191d86cde240fa420d588f9890dd9ded346ecf176da153aa6a0683b6940"
+    },
+    "docs/engineering/baseline/client-requirements-standards.md": {
+      "kind": "file",
+      "sha256": "c5330c6952caa4e5b9bcf312322a7b2ff0a506571b577d552f11704c5ad266ee"
+    },
+    "docs/engineering/baseline/coding-standards.md": {
+      "kind": "file",
+      "sha256": "6a44f03670af922a613cc44c615c9f2627c82575405334cee9b40141ebe2a722"
+    },
+    "docs/engineering/baseline/credential-isolation-standards.md": {
+      "kind": "file",
+      "sha256": "8bacd5086c8728e4d9142d72b7f00800a82702c342ccb07e561c1a0a58fa476c"
+    },
+    "docs/engineering/baseline/database-standards.md": {
+      "kind": "file",
+      "sha256": "eb44e64e040b33a98aa1d7a96e3d81936dc14b9eb8a5fd0d056a41cd7dfc725d"
+    },
+    "docs/engineering/baseline/developer-testing-strategy.md": {
+      "kind": "file",
+      "sha256": "19b75d4b3b60f17af155afea417d4ea66feacd4fa9765b1c5b7a58661f418a5c"
+    },
+    "docs/engineering/baseline/devops-standards.md": {
+      "kind": "file",
+      "sha256": "b6727510d47531ed89613a9fb8b452b1d172e294ec6374a31d2f1eea7fb2e7eb"
+    },
+    "docs/engineering/baseline/documentation-standards.md": {
+      "kind": "file",
+      "sha256": "72a006009ad9ba8eb9ef1b1861744063d703f507970a6dfb7d59354d5b05632e"
+    },
+    "docs/engineering/baseline/domain-workflow-blueprints.md": {
+      "kind": "file",
+      "sha256": "28b8576539994c80a19a95052a6a075f333e816a3556cfbcdb0bbb424ba7aa6c"
+    },
+    "docs/engineering/baseline/engineering-standards.md": {
+      "kind": "file",
+      "sha256": "dee901ca99383bcba0cb3e74dd5933767b7bda2dc9651056aff0d8f6a7d91bea"
+    },
+    "docs/engineering/baseline/frontend-standards.md": {
+      "kind": "file",
+      "sha256": "777c1bde3a67cb7308fa1daed3ba60080c665898f3fa46d41581becf480d09ef"
+    },
+    "docs/engineering/baseline/git-standards.md": {
+      "kind": "file",
+      "sha256": "3807692d574388c2497a1abad0d628488357e73765f28bb919c71c19fe288660"
+    },
+    "docs/engineering/baseline/hiranyam-brand-identity-spec.md": {
+      "kind": "file",
+      "sha256": "d57fd4c14eba5fbf381fac5eb1e82749dc716ebd2fa033f0054ff66e1f5bd3e2"
+    },
+    "docs/engineering/baseline/i18n-standards.md": {
+      "kind": "file",
+      "sha256": "ff5b791dafafecac5fb750895e96cb64aec0b88328e091d216307544ed9773e6"
+    },
+    "docs/engineering/baseline/loop-engineering-standard.md": {
+      "kind": "file",
+      "sha256": "65e31c2ad937f22432752f7fbeec9e1c0023689eac774182a3137d38bde50891"
+    },
+    "docs/engineering/baseline/luxury-web-factory-standards.md": {
+      "kind": "file",
+      "sha256": "ef11d7bb9227f457a9e5b5a043b0499c09e72fc1663f2fb4d884ac0eb74d264f"
+    },
+    "docs/engineering/baseline/media-asset-strategy.md": {
+      "kind": "file",
+      "sha256": "95bf6a6ab9b28e8f8800d82f2f3240d75ad66f20a54eda15f8ef6fec448f5fb7"
+    },
+    "docs/engineering/baseline/mobile-standards.md": {
+      "kind": "file",
+      "sha256": "e506f9524cf89b8af3c663c135389cf6e284f8c2081c4f35830ef9e97e772baf"
+    },
+    "docs/engineering/baseline/open-source-first-standards.md": {
+      "kind": "file",
+      "sha256": "2dbf3acb8d40d8d2e90906dd1aaca8d0ac2bc5dea7ef4ee9f8969ebfe83bd056"
+    },
+    "docs/engineering/baseline/presentation-standards.md": {
+      "kind": "file",
+      "sha256": "6721d23b82862bcac2da65c29be57ace3b73f7cf74d369ab16b0cdd4593773e7"
+    },
+    "docs/engineering/baseline/privacy-and-consent-standards.md": {
+      "kind": "file",
+      "sha256": "1b9e5eb7f23adc6882f2d4f7ac3c0d81ff89a823b6f934be459a67847386caf6"
+    },
+    "docs/engineering/baseline/proposal-letterhead-standard.md": {
+      "kind": "file",
+      "sha256": "3bda9682b3028796781eacc5f844c8e861ba268b37cc5886b50313472c4f28f2"
+    },
+    "docs/engineering/baseline/reusable-components-standards.md": {
+      "kind": "file",
+      "sha256": "51331aa36519571d4dea98c77bffcaff74428a373d3eb6e5a52f5e4880986493"
+    },
+    "docs/engineering/baseline/security-standards.md": {
+      "kind": "file",
+      "sha256": "714e9f62a17f8ebd438ca3efedf3581c1b9a2f1b18862a3f6187b6952425b211"
+    },
+    "docs/engineering/baseline/sources/openspec/decisions/ADR-0027-project-specific-credential-server-isolation.md": {
+      "kind": "file",
+      "sha256": "6d3b36b6ae3e8755cf82567cfba2769324edb1c92f04440c111b62583988dd30"
+    },
+    "docs/engineering/baseline/sources/openspec/decisions/ADR-0029-versioned-engineering-governance.md": {
+      "kind": "file",
+      "sha256": "9daadc50c780b0a8ad36cc27cd8251ccdfd0f2b155cb28e2f926a97271090502"
+    },
+    "docs/engineering/baseline/sources/openspec/decisions/ADR-0030-developer-owned-dual-mode-testing.md": {
+      "kind": "file",
+      "sha256": "00a0340b12876dbaebd1019cd924274deb6af13f5b1eff602125067117772b2a"
+    },
+    "docs/engineering/baseline/sources/openspec/specs/developer-handover-standard.md": {
+      "kind": "file",
+      "sha256": "32e0ebf85b73d77ef3f746f73e40865b56876b330e731ca8db7b9e93f6f223d8"
+    },
+    "docs/engineering/baseline/sources/openspec/specs/engineering-governance-spec.md": {
+      "kind": "file",
+      "sha256": "7bdc6b989805513704e852999afe25d7da18f19bce62cf6b8e0b67394d5a8d8c"
+    },
+    "docs/engineering/baseline/sources/openspec/specs/native-ai-image-generation-spec.md": {
+      "kind": "file",
+      "sha256": "c994f700e1af36726576a436d39ee30a4d08ee0a340bd8a1864c6cf7eb7f09e3"
+    },
+    "docs/engineering/baseline/sources/openspec/specs/project-structure-and-deployment-standard.md": {
+      "kind": "file",
+      "sha256": "c5c10a9e6a8c3ba0a25c451622268dc80e97cf3bce2286b9cb21aaa4aa7d98c8"
+    },
+    "docs/engineering/baseline/sources/openspec/specs/single-prompt-engineering-standard.md": {
+      "kind": "file",
+      "sha256": "c0f08b4ef012059da5784106c5e19ac6b0d5541e5ce576dfc8ced2d4059673ce"
+    },
+    "docs/engineering/baseline/sources/openspec/specs/workflow-execution-diagnostics-spec.md": {
+      "kind": "file",
+      "sha256": "fae9edee0abd98bb763eeb859e90efa184af7df2a1332ea9cca7e5ed525db394"
+    },
+    "docs/engineering/baseline/sources/registry/project-aliases.json": {
+      "kind": "file",
+      "sha256": "7d9946260693a57c3bf93f2d1cb66c1e9016892502a5478ec580725c0783e3d5"
+    },
+    "docs/engineering/baseline/sources/registry/task-recipes.json": {
+      "kind": "file",
+      "sha256": "e4ed28acd865d4d70cca82aa2ff06beeaed9d8157cd39e03bd08621be1ca601f"
+    },
+    "docs/engineering/baseline/sources/registry/testing-policy.json": {
+      "kind": "file",
+      "sha256": "6b70246f56a1a4a5dff3e8c0298ea1835687e115b1acb4ede135ad90fe39ba61"
+    },
+    "docs/engineering/baseline/testing-standards.md": {
+      "kind": "file",
+      "sha256": "799bdc611f22ae343fa2af778740ab202630e81b910159488d700465c9d0d54b"
+    },
+    "docs/engineering/baseline/toolchain-and-capability-standard.md": {
+      "kind": "file",
+      "sha256": "eddaca8d8e46dea316c874989612f25c038b15ad2c098cc213fc959866f0eafa"
+    },
+    "docs/engineering/baseline/ui-ux-design-standards.md": {
+      "kind": "file",
+      "sha256": "57cf584272ade596a02412ded8411385718004ff605a5b6f26731efa5dd4b0a8"
+    },
+    "docs/engineering/baseline/whatsapp-messaging-compliance-standards.md": {
+      "kind": "file",
+      "sha256": "da2c0f3c565280309ce7d6c8bd0772c1fef9fe52c29c8044920c1eb20b94d571"
+    },
+    "docs/engineering/baseline/whatsapp-support-standards.md": {
+      "kind": "file",
+      "sha256": "7ad9a8e1c1ad6b2c03443696c4800ab7f6361e2324c31169fd69102e1ca29c7b"
+    },
+    "openspec/specs/engineering-governance.md": {
+      "kind": "file",
+      "sha256": "9b832f81eaa01993ebe75ad0bf7bb623d248de876dcdd89094498880bfc2ec42"
+    }
+  },
+  "generator": "hiranyam-engineering-governance-v1",
+  "project_id": "dentist-workflow-automation",
+  "schema_version": 1,
+  "sources": {
+    "openspec/decisions/ADR-0027-project-specific-credential-server-isolation.md": "6d3b36b6ae3e8755cf82567cfba2769324edb1c92f04440c111b62583988dd30",
+    "openspec/decisions/ADR-0029-versioned-engineering-governance.md": "9daadc50c780b0a8ad36cc27cd8251ccdfd0f2b155cb28e2f926a97271090502",
+    "openspec/decisions/ADR-0030-developer-owned-dual-mode-testing.md": "00a0340b12876dbaebd1019cd924274deb6af13f5b1eff602125067117772b2a",
+    "openspec/specs/developer-handover-standard.md": "32e0ebf85b73d77ef3f746f73e40865b56876b330e731ca8db7b9e93f6f223d8",
+    "openspec/specs/engineering-governance-spec.md": "67466c779c4e673c4239b09138c994f87af4b8c6b56c9fe2b92cbe8727856388",
+    "openspec/specs/native-ai-image-generation-spec.md": "c994f700e1af36726576a436d39ee30a4d08ee0a340bd8a1864c6cf7eb7f09e3",
+    "openspec/specs/project-structure-and-deployment-standard.md": "c5c10a9e6a8c3ba0a25c451622268dc80e97cf3bce2286b9cb21aaa4aa7d98c8",
+    "openspec/specs/single-prompt-engineering-standard.md": "c0f08b4ef012059da5784106c5e19ac6b0d5541e5ce576dfc8ced2d4059673ce",
+    "openspec/specs/workflow-execution-diagnostics-spec.md": "fae9edee0abd98bb763eeb859e90efa184af7df2a1332ea9cca7e5ed525db394",
+    "registry/project-aliases.json": "7d9946260693a57c3bf93f2d1cb66c1e9016892502a5478ec580725c0783e3d5",
+    "registry/task-recipes.json": "e4ed28acd865d4d70cca82aa2ff06beeaed9d8157cd39e03bd08621be1ca601f",
+    "registry/testing-policy.json": "6b70246f56a1a4a5dff3e8c0298ea1835687e115b1acb4ede135ad90fe39ba61",
+    "standards/ai-automation-standards.md": "b051d19a764b9d6315c25a401a75dce7a999a0cc4e55f4db3d5741b68c4764d6",
+    "standards/ai-chatbot-training-kill-critic-standard.md": "f659591d2fdd3121e5af8768e8973db7ac6a644a322fa59e5a68cc38f62d6972",
+    "standards/ai-image-and-visual-design-standards.md": "4749f7816b9513b6f202bbfb994092598770f0c6dcb190be79f570364c270861",
+    "standards/api-standards.md": "d87848dc1823ed8c47ea9761cb42d236b66f9c90865fb2fd96c3c0b330a80245",
+    "standards/architecture-standards.md": "697db76bbbc4f5e9bf757c4481adc254c566c91b4d5868eaa316f26292de35d7",
+    "standards/autonomous-engineering-playbook.md": "217e9f3b9b6590b731c8e48d5fda23552554a36f64d711844dfc0ecb77394ec6",
+    "standards/brand-endorsement-standards.md": "85a0909512f1a13201b1669852616fe8fa10b0e885c1be717656f30f70c70c04",
+    "standards/browser-testing-standard.md": "71536191d86cde240fa420d588f9890dd9ded346ecf176da153aa6a0683b6940",
+    "standards/client-requirements-standards.md": "c5330c6952caa4e5b9bcf312322a7b2ff0a506571b577d552f11704c5ad266ee",
+    "standards/coding-standards.md": "6a44f03670af922a613cc44c615c9f2627c82575405334cee9b40141ebe2a722",
+    "standards/credential-isolation-standards.md": "8bacd5086c8728e4d9142d72b7f00800a82702c342ccb07e561c1a0a58fa476c",
+    "standards/database-standards.md": "fb2aa45d09294b1b3d3e51bd5af3cadadd61f8edc5768482666461779fb8b1bb",
+    "standards/developer-testing-strategy.md": "19b75d4b3b60f17af155afea417d4ea66feacd4fa9765b1c5b7a58661f418a5c",
+    "standards/devops-standards.md": "b6727510d47531ed89613a9fb8b452b1d172e294ec6374a31d2f1eea7fb2e7eb",
+    "standards/documentation-standards.md": "72a006009ad9ba8eb9ef1b1861744063d703f507970a6dfb7d59354d5b05632e",
+    "standards/domain-workflow-blueprints.md": "28b8576539994c80a19a95052a6a075f333e816a3556cfbcdb0bbb424ba7aa6c",
+    "standards/engineering-standards.md": "0db5eb7b97f5a007b8db239e7bd0c82e84bf5ad8e428afef7b172073b6b9a95b",
+    "standards/frontend-standards.md": "777c1bde3a67cb7308fa1daed3ba60080c665898f3fa46d41581becf480d09ef",
+    "standards/git-standards.md": "6e25d998409729f0cbcc8513623d9fc3323f52ef6f35e3aa91cef3a55a16e2c8",
+    "standards/hiranyam-brand-identity-spec.md": "d57fd4c14eba5fbf381fac5eb1e82749dc716ebd2fa033f0054ff66e1f5bd3e2",
+    "standards/i18n-standards.md": "ff5b791dafafecac5fb750895e96cb64aec0b88328e091d216307544ed9773e6",
+    "standards/loop-engineering-standard.md": "65e31c2ad937f22432752f7fbeec9e1c0023689eac774182a3137d38bde50891",
+    "standards/luxury-web-factory-standards.md": "ef11d7bb9227f457a9e5b5a043b0499c09e72fc1663f2fb4d884ac0eb74d264f",
+    "standards/media-asset-strategy.md": "95bf6a6ab9b28e8f8800d82f2f3240d75ad66f20a54eda15f8ef6fec448f5fb7",
+    "standards/mobile-standards.md": "e506f9524cf89b8af3c663c135389cf6e284f8c2081c4f35830ef9e97e772baf",
+    "standards/open-source-first-standards.md": "2dbf3acb8d40d8d2e90906dd1aaca8d0ac2bc5dea7ef4ee9f8969ebfe83bd056",
+    "standards/presentation-standards.md": "6721d23b82862bcac2da65c29be57ace3b73f7cf74d369ab16b0cdd4593773e7",
+    "standards/privacy-and-consent-standards.md": "1b9e5eb7f23adc6882f2d4f7ac3c0d81ff89a823b6f934be459a67847386caf6",
+    "standards/proposal-letterhead-standard.md": "3bda9682b3028796781eacc5f844c8e861ba268b37cc5886b50313472c4f28f2",
+    "standards/reusable-components-standards.md": "51331aa36519571d4dea98c77bffcaff74428a373d3eb6e5a52f5e4880986493",
+    "standards/security-standards.md": "714e9f62a17f8ebd438ca3efedf3581c1b9a2f1b18862a3f6187b6952425b211",
+    "standards/testing-standards.md": "799bdc611f22ae343fa2af778740ab202630e81b910159488d700465c9d0d54b",
+    "standards/toolchain-and-capability-standard.md": "dbd39737aa914e5f9d17e8f19d427b49a6079245fd2b5978ee1dcef97f5797d8",
+    "standards/ui-ux-design-standards.md": "57cf584272ade596a02412ded8411385718004ff605a5b6f26731efa5dd4b0a8",
+    "standards/whatsapp-messaging-compliance-standards.md": "da2c0f3c565280309ce7d6c8bd0772c1fef9fe52c29c8044920c1eb20b94d571",
+    "standards/whatsapp-support-standards.md": "7ad9a8e1c1ad6b2c03443696c4800ab7f6361e2324c31169fd69102e1ca29c7b",
+    "templates/engineering-governance/agent-entry.md": "932cd4eb821d43b9b07b8854068e31a636e48f9afed5a23e61dd2bbf24be75a5",
+    "templates/engineering-governance/engineering-governance.md": "4f4b72e16ea937a22f96b64ea34a7a4be2f11ec1007aa6719ce472b077164913",
+    "templates/engineering-governance/loop-engineering.md": "99666c5dbcd995e02e9e1c34ec8d3812eebbf4043e2d8d41ea5af3335eb71985",
+    "templates/engineering-governance/testing-strategy.md": "3ee8389be59729c64853c5731f5bdd7a490bf1d8ca868fa51dcaeb203e6794fa"
+  }
+}

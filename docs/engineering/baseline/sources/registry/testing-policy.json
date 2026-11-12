@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "baseline_version": "2026.11.11.1",
+  "quality_owner": "developers-and-engineering-agents",
+  "client_uat_role": "business-acceptance-after-developer-verification",
+  "browser": {
+    "supported_modes": ["headed", "headless"],
+    "required_release_modes": ["headed", "headless"],
+    "default_local_mode": "headed",
+    "mode_environment_variable": "BROWSER_TEST_MODE",
+    "launch_options": {"headed": {"headless": false}, "headless": {"headless": true}},
+    "silent_fallback_allowed": false,
+    "missing_mode_status": "BLOCKED"
+  },
+  "tool_review_triggers": ["new-project", "significant-capability-change", "release", "security-advisory"],
+  "tool_adoption_requirements": ["official-provenance", "free-open-source-license", "compatibility", "pinned-version", "regression-verification"],
+  "categories": [
+    {"id": "unit-component", "capabilities": ["governance", "quality", "web", "api", "database", "workflow", "calculation", "mobile"], "tools": ["project-native-test-runner"]},
+    {"id": "calculation-property", "capabilities": ["calculation"], "tools": ["decimal-arithmetic", "fast-check-or-language-equivalent"]},
+    {"id": "contract-integration", "capabilities": ["api", "database", "workflow", "cms"], "tools": ["schema-validation", "project-native-integration-tests"]},
+    {"id": "functional-e2e", "capabilities": ["web", "cms", "mobile", "workflow"], "tools": ["playwright-or-existing-compatible-harness"]},
+    {"id": "browser-both-modes", "capabilities": ["web", "cms"], "tools": ["playwright-or-puppeteer"]},
+    {"id": "responsive-accessibility", "capabilities": ["web", "cms", "mobile", "presentation"], "tools": ["axe-core-where-supported", "manual-visual-keyboard-touch-review"]},
+    {"id": "security-negative", "capabilities": ["governance", "web", "cms", "api", "database", "workflow", "mobile", "deployment", "security"], "tools": ["trivy", "osv-scanner", "gitleaks", "grype-when-applicable", "zap-on-authorized-running-web-target"]},
+    {"id": "offline-recovery", "capabilities": ["database", "mobile", "workflow"], "tools": ["project-native-failure-injection-and-restore-tests"]},
+    {"id": "performance-concurrency", "capabilities": ["api", "database", "workflow", "deployment"], "tools": ["compatible-open-source-load-harness"]},
+    {"id": "mobile-device", "capabilities": ["mobile"], "tools": ["wireless-adb", "project-native-mobile-tests"]},
+    {"id": "document-presentation", "capabilities": ["presentation", "customer-documentation", "governance"], "tools": ["project-renderer", "visual-page-slide-review"]},
+    {"id": "release-rollback", "capabilities": ["deployment"], "tools": ["project-owned-release-health-and-recovery-checks"]}
+  ]
+}

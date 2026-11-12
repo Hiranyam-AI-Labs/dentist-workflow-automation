@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "aliases": {
+    "nirmiti-setu": {
+      "project": "bbng-parivartan-2027",
+      "relationship": "capability-within-project",
+      "display_name": "Nirmiti Setu",
+      "source": "User clarification, 2026-11-09"
+    }
+  }
+}

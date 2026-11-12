@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "baseline_version": "2026.11.11.1",
+  "default_recipe": "general-change",
+  "always": [
+    "project-contract",
+    "security-and-evidence",
+    "developer-testing"
+  ],
+  "recipes": [
+    {
+      "id": "project-contract",
+      "capability": "governance",
+      "keywords": [],
+      "checklist": [
+        "Resolve exact registered repository and inspect current Git state",
+        "Read local agent contract, active OpenSpec change and requirement IDs",
+        "Reuse verified components and project commands",
+        "Record capabilities, acceptance criteria and documentation impact"
+      ],
+      "required_checks": [
+        "Project identity and isolation",
+        "Actual executable commands from checked-in configuration"
+      ]
+    },
+    {
+      "id": "security-and-evidence",
+      "capability": "governance",
+      "keywords": [],
+      "checklist": [
+        "Use project-isolated credential references and synthetic test data",
+        "Run affected secret/privacy checks and preserve custom work",
+        "Record command, exit code, input revision, artifact and status",
+        "Update affected source/PDF inventory, review intended diff and commit when gates pass"
+      ],
+      "required_checks": [
+        "Meaningful security exit status",
+        "No fabricated approval, consent, tests or deployment"
+      ]
+    },
+    {
+      "id": "general-change",
+      "capability": "governance",
+      "keywords": [],
+      "checklist": [
+        "Translate the business request into explicit acceptance scenarios",
+        "Discover applicable capabilities from the actual project",
+        "Implement the smallest complete change with living comments",
+        "Validate, fix diagnosed failures, document and record the next action"
+      ],
+      "required_checks": [
+        "Acceptance criteria linked to observed evidence"
+      ]
+    },
+    {
+      "id": "ui-design",
+      "capability": "web",
+      "keywords": [
+        "ui",
+        "ux",
+        "styling",
+        "style",
+        "design",
+        "responsive",
+        "website",
+        "portal",
+        "dashboard",
+        "form",
+        "screen",
+        "interface"
+      ],
+      "checklist": [
+        "Use project theme tokens and approved reusable controls",
+        "For compatible React projects assess shadcn/ui and existing primitives; preserve established stack",
+        "Cover loading, empty, error, permission and success states",
+        "Preserve branded footer, accessible labels, focus, keyboard and touch behavior"
+      ],
+      "required_checks": [
+        "Responsive screenshots and zero overflow",
+        "Changed control/flow tests",
+        "Playwright and axe-core where compatible",
+        "Manual visual and interaction review"
+      ]
+    },
+    {
+      "id": "content-management",
+      "capability": "cms",
+      "keywords": [
+        "cms",
+        "content",
+        "editor",
+        "headless",
+        "catalog",
+        "gallery",
+        "faq",
+        "blog",
+        "news",
+        "page copy"
+      ],
+      "checklist": [
+        "Record content ownership and need for a nontechnical editor",
+        "Assess self-hosted Payload core for compatible Next.js projects or Strapi community for separate CMS service",
+        "Model pages, media, SEO, locales, drafts, publishing and content history",
+        "Enforce server-side editor permissions, validation, uploads, migration and backup/restore",
+        "Keep financial rules, secrets and business transaction records outside unrestricted page content"
+      ],
+      "required_checks": [
+        "Editor/viewer permission tests",
+        "Draft content excluded from public API",
+        "Publish/preview/cache behavior",
+        "Upload validation and backup restoration"
+      ]
+    },
+    {
+      "id": "calculation-engine",
+      "capability": "calculation",
+      "keywords": [
+        "calculation",
+        "calculator",
+        "calculate",
+        "formula",
+        "interest",
+        "quotation",
+        "quote",
+        "pricing",
+        "tax",
+        "emi",
+        "gst",
+        "financial",
+        "rounding",
+        "quantity",
+        "estimate"
+      ],
+      "checklist": [
+        "Define authoritative formula, units, effective date, assumptions and rounding rules",
+        "Create one deterministic versioned calculation module shared by API, UI and reports",
+        "Use decimal arithmetic for money; serialize decimals as strings or minor units",
+        "Validate input schemas, finite values, ranges, division and overflow",
+        "Record formula version and assumptions with each result; require reviewed publication of rule changes"
+      ],
+      "required_checks": [
+        "Golden input/output cases from authoritative requirements",
+        "Boundary and invalid-input cases",
+        "Rounding and cross-surface parity",
+        "Property tests where appropriate"
+      ]
+    },
+    {
+      "id": "code-quality",
+      "capability": "quality",
+      "keywords": [
+        "coding",
+        "lint",
+        "quality",
+        "refactor",
+        "standard",
+        "formatter",
+        "typescript",
+        "python",
+        "java",
+        "flutter"
+      ],
+      "checklist": [
+        "Use the project's existing formatter/linter/type checker",
+        "Assess Biome for compatible JS/TS new baselines; preserve needed ESLint plugins",
+        "Keep explanatory headers above every modified routine and comments on decisions/data flow",
+        "Pin versions and lock dependencies; avoid repo-wide formatting churn"
+      ],
+      "required_checks": [
+        "Affected lint/typecheck/build",
+        "Behavioral regression tests",
+        "Living comment review"
+      ]
+    },
+    {
+      "id": "data-api",
+      "capability": "database",
+      "keywords": [
+        "database",
+        "schema",
+        "migration",
+        "api",
+        "postgres",
+        "storage",
+        "record",
+        "rbac",
+        "permission"
+      ],
+      "checklist": [
+        "Maintain explicit API/schema contracts and server-side authorization",
+        "Use forward-only migrations and reproducible synthetic seeds",
+        "Use project-isolated storage and parameterized queries",
+        "Document transaction and backup/recovery behavior"
+      ],
+      "required_checks": [
+        "Schema/migration tests",
+        "Role and tenant isolation",
+        "Negative inputs",
+        "Recovery and encryption checks when sensitive storage is affected"
+      ]
+    },
+    {
+      "id": "mobile",
+      "capability": "mobile",
+      "keywords": [
+        "mobile",
+        "android",
+        "handset",
+        "flutter",
+        "tablet",
+        "offline",
+        "back button"
+      ],
+      "checklist": [
+        "Keep mobile layout, safe areas, styled controls and branded footer",
+        "Verify tab history, sub-state dismissal and root exit confirmation",
+        "Test encryption, masking, offline outbox, sync and purge behavior",
+        "Maintain complete screen/action inventory and physical wireless ADB evidence"
+      ],
+      "required_checks": [
+        "Physical handset screen/action QA",
+        "Portrait/landscape screenshots",
+        "Required stress and security tests",
+        "Mark absent handset gate BLOCKED"
+      ]
+    },
+    {
+      "id": "workflow-ai",
+      "capability": "workflow",
+      "keywords": [
+        "workflow",
+        "chatbot",
+        "chat",
+        "n8n",
+        "whatsapp",
+        "agent",
+        "training",
+        "faq"
+      ],
+      "checklist": [
+        "Inspect actual project workflow and sanitized runtime execution",
+        "Check session isolation, trained override precedence and deterministic response boundaries",
+        "Validate opt-in and message compliance for messaging",
+        "Use project-local diagnostics; preserve core FAQs and client isolation"
+      ],
+      "required_checks": [
+        "Real execution graph evidence",
+        "Boundary/format/negative cases",
+        "Data minimization and session separation"
+      ]
+    },
+    {
+      "id": "release",
+      "capability": "deployment",
+      "keywords": [
+        "deploy",
+        "release",
+        "publish",
+        "hosting",
+        "server",
+        "production"
+      ],
+      "checklist": [
+        "Resolve declared enabled project/environment identity",
+        "Build reproducible release with rollback and project-owned deployment script",
+        "Complete affected tests, security gates and current handover outputs",
+        "Perform remote changes only when deployment is in the user's requested scope"
+      ],
+      "required_checks": [
+        "Target identity and reference-only credentials",
+        "Observed public health and product smoke flows",
+        "Rollback evidence and explicit unverified gaps",
+        "Complete security-release recipe before both UAT and production"
+      ]
+    },
+    {
+      "id": "security-release",
+      "capability": "security",
+      "keywords": [
+        "security",
+        "secure",
+        "vulnerability",
+        "vulnerabilities",
+        "cve",
+        "scan",
+        "scanners",
+        "uat",
+        "production",
+        "deploy",
+        "release"
+      ],
+      "checklist": [
+        "Resolve all applicable dependency, container/OS, configuration, secret, source, DAST and host security coverage",
+        "Use Trivy and OSV-Scanner for supported dependencies, image Trivy/Grype for containers, Gitleaks for secrets and authorized isolated ZAP for web/API",
+        "Fix every confirmed applicable finding at every severity, rebuild and re-scan the final artifact",
+        "Bind evidence to source revision, immutable artifact, configuration, scanner/database version and target environment",
+        "Block UAT and production when any required check or remediation is missing; a core collector report alone is not release approval"
+      ],
+      "required_checks": [
+        "Zero unresolved confirmed applicable findings at all severities",
+        "No ignore-unfixed, blanket suppressions or unsupported-scan green result",
+        "Current artifact-bound full release gate before remote mutation"
+      ]
+    },
+    {
+      "id": "developer-testing",
+      "capability": "governance",
+      "keywords": [],
+      "checklist": [
+        "Developers and agents own pre-delivery testing; client UAT follows verified engineering checks",
+        "Generate the applicable capability test matrix and discover actual project-owned commands",
+        "Support visible and headless browser modes with explicit mode selection and equivalent acceptance cases",
+        "Assess current compatible FOSS tools, pin verified versions and retain dated evidence",
+        "Record actual execution and all missing tests; do not label a plan or unavailable suite as passed"
+      ],
+      "required_checks": [
+        "All relevant unit, integration, functional, security, negative, calculation, accessibility, responsive, offline, recovery, performance and release cases",
+        "Both browser modes for applicable UI release verification",
+        "Explicit BLOCKED state for missing environments or required tests"
+      ]
+    }
+  ]
+}
