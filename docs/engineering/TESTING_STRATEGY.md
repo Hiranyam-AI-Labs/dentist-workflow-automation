@@ -1,6 +1,6 @@
 # Developer testing strategy — dentist-workflow-automation
 
-Baseline: `2026.11.11.1`. Registered type: `unclassified`. Developers and engineering agents own complete capability QA. Client UAT is additional business acceptance after developer verification.
+Baseline: `2026.11.13.2`. Registered type: `unclassified`. Developers and engineering agents own complete capability QA. Client UAT is additional business acceptance after developer verification.
 
 ## Project-owned acceptance and commands
 

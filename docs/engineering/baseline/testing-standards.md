@@ -1,6 +1,6 @@
 # Testing Standards — Hiranyam AI Ecosystem
 
-Baseline: `2026.11.11.1` · Effective: 2026-11-11
+Baseline: `2026.11.13.1` · Effective: 2026-11-13
 
 Verification must demonstrate the acceptance criteria of the actual change. Use the target repository's declared commands and prerequisites. Never report a check as passed because a file exists, a command was proposed, or an agent reviewed the code.
 
@@ -24,9 +24,9 @@ Run focused checks during the inner fix loop, then the full applicable acceptanc
 
 ## Result states and evidence
 
-Use `PASS`, `FAIL`, `BLOCKED`, `NOT RUN`, or `NOT APPLICABLE` as defined in [the loop standard](loop-engineering-standard.md). Each result identifies the tested revision/files, command, actual exit code or observed interaction, timestamp with timezone, environment/device, and sanitized evidence path. Explain all blocked and non-applicable checks.
+Use `PASS`, `FAIL`, `BLOCKED`, `NOT_RUN`, or `NOT_APPLICABLE` as defined in [the loop standard](loop-engineering-standard.md). Each result identifies the tested revision/files, command, actual exit code or observed interaction, timestamp with timezone, environment/device, and sanitized evidence path. Explain all blocked and non-applicable checks.
 
-A required `FAIL`, `BLOCKED`, or `NOT RUN` result prevents verified release sign-off. Do not erase failures; link them to their correction and rerun. Keep full diagnostic logs available locally for root-cause analysis, while shared reports minimize personal data and exclude credentials.
+A required `FAIL`, `BLOCKED`, or `NOT_RUN` result prevents verified release sign-off. Do not erase failures; link them to their correction and rerun. Keep full diagnostic logs available locally for root-cause analysis, while shared reports minimize personal data and exclude credentials.
 
 ## Responsive website and dashboard acceptance
 
@@ -60,7 +60,7 @@ Set concurrency, payload, latency, and resource thresholds from the product spec
 
 ## Failure loop and required documentation
 
-Reproduce failures, read their complete local traces, fix the root cause, rerun the failed and dependent checks, then complete the required acceptance suite. Record meaningful hypotheses and avoid repeating identical failed attempts without new information. A blocker cannot be converted to `NOT APPLICABLE` merely to obtain a green report.
+Reproduce failures, read their complete local traces, fix the root cause, rerun the failed and dependent checks, then complete the required acceptance suite. Record meaningful hypotheses and avoid repeating identical failed attempts without new information. A blocker cannot be converted to `NOT_APPLICABLE` merely to obtain a green report.
 
 Update affected test plans, OpenSpec criteria, loop evidence, screen/action reports, and handover PDFs under [documentation standards](documentation-standards.md). Store repeatable commands and reusable fixtures in the project so the next session does not rediscover them. New tooling must remain within the free/open-source policy.
 

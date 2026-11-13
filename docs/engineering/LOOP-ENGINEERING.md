@@ -1,6 +1,6 @@
 # Loop engineering entry point — dentist-workflow-automation
 
-Baseline: `2026.11.11.1`. This is a stable entry point; keep change-specific evidence in the active OpenSpec change or `docs/engineering/iterations/` so baseline upgrades cannot overwrite the history.
+Baseline: `2026.11.13.2`. This is a stable entry point; keep change-specific evidence in the active OpenSpec change or `docs/engineering/iterations/` so baseline upgrades cannot overwrite the history.
 
 | Step | Required record |
 | --- | --- |

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "baseline_version": "2026.11.11.1",
+  "baseline_version": "2026.11.13.1",
   "default_recipe": "general-change",
   "always": [
     "project-contract",
@@ -89,7 +89,7 @@
         "cms",
         "content",
         "editor",
-        "headless",
+        "headless cms",
         "catalog",
         "gallery",
         "faq",

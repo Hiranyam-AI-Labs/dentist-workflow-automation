@@ -26,3 +26,17 @@ For a declared Hostinger Docker Swarm/Traefik environment, maintain the project'
 6. If checks fail, stop promotion and apply the documented scoped rollback. Record rollback evidence and residual issues.
 
 The loop log records performed deployment actions, target identity, reference names, build/test outcomes, release and health evidence. If remote verification cannot run, record `BLOCKED` or `NOT_RUN`; do not infer deployment from archive generation or a successful local build.
+
+## Universal Strict Environment Isolation & Deployment Safety Protocol (P0 Rule 32)
+
+Every model, agent, orchestrator, and engineer across all Hiranyam AI and client projects MUST strictly enforce this deployment protocol:
+
+1. **Absolute Prohibition of Direct-to-Production Push or Deployment**:
+   - **NEVER** push code, trigger builds, execute database migrations, or deploy changes directly to any production server, domain, or live cluster (`production` host / environment) without staging/UAT verification.
+   - Direct-to-production pushes without preceding UAT testing are classified as critical P0 architectural violations.
+2. **Mandatory Testing / UAT Server Staging**:
+   - Every code change, patch, feature, and configuration update MUST first be deployed exclusively to the designated testing or UAT environment (e.g. UAT host, test container, staging URL).
+3. **Exhaustive UAT Regression & QA Gate**:
+   - Once running on the UAT server, execute full automated regression testing and comprehensive manual QA validation across primary and adjacent workflows before proceeding.
+4. **Explicit Manual Client Approval Requirement**:
+   - Zero production deployments are permitted based solely on automated passes or agent discretion. Deliver a concise UAT test report to the user/client, and proceed to production deployment ONLY after explicit written manual approval.
