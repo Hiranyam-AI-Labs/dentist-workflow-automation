@@ -1,7 +1,9 @@
 <!-- BEGIN HIRANYAM ENGINEERING GOVERNANCE -->
-## Shared engineering baseline — 2026.11.11.1
+## Shared engineering baseline — 2026.11.13.1
 
 This repository receives the same model-independent operating contract for Codex, Gemini, Claude, and other assistants. Read `openspec/specs/engineering-governance.md`, then `docs/engineering/baseline/autonomous-engineering-playbook.md`, the local requirements register, and the active OpenSpec change. Read only standards relevant to the requested change.
+
+Follow `docs/engineering/baseline/agent-interoperability-standard.md` for the common checklist, actual context-read receipt and cross-model handoff. Use `docs/engineering/HANDOFF_TEMPLATE.md` to record live progress in the active change. State unavailable file/execution access explicitly; never pretend instructions or tests were executed.
 
 This versioned baseline supersedes legacy broad workflow defaults only: duplicate model instructions, assumed approval/consent, blanket ecosystem mutation and indiscriminate reruns. Preserve product specifications, accepted project decisions, and stronger applicable safety/release requirements. A tool listed in a shared capability catalog is a candidate; select it for the actual project and verify compatibility and licensing before installation.
 

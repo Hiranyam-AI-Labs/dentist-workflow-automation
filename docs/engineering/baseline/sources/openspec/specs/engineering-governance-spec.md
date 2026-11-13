@@ -1,6 +1,6 @@
 # Versioned engineering governance
 
-Spec ID: **SPEC-ENG-GOV-001** | Version: **1.0.0** | Baseline: **2026.11.11.1** | Effective: **2026-11-09**
+Spec ID: **SPEC-ENG-GOV-001** | Version: **1.0.0** | Baseline: **2026.11.13.1** | Effective: **2026-11-09**
 
 ## Problem and scope
 
@@ -28,6 +28,7 @@ This specification governs shared coding/loop/documentation guidance, its safe d
 | GOV-014 | Developer-owned testing | Assess the complete capability test matrix, discover real commands, implement missing applicable cases and record executed results before client UAT; generated plans cannot grant a pass |
 | GOV-015 | Both browser modes | Project harnesses support explicit headless false/true modes; applicable UI release verification runs equivalent cases in both modes and blocks missing modes without fallback |
 | GOV-016 | Current verified tools | Review official releases/licenses/advisories for new projects, significant changes and releases; pin compatible verified FOSS versions and regression-test upgrades |
+| GOV-017 | Model-independent execution and resume | Every adapter loads the same checklist; the active change records actual context, acceptance evidence, Git state, blockers and next action. Unavailable tools/files cannot be represented as execution. Documentation never claims to train a model or enforce uninspected deployment paths. |
 
 ## Source ownership and installed contract
 

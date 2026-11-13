@@ -1,6 +1,6 @@
 # Engineering governance — dentist-workflow-automation
 
-Baseline: `2026.11.11.1`. Registry classification: `unclassified`. This classification is inventory metadata, not proof that a capability is implemented or tested.
+Baseline: `2026.11.13.1`. Registry classification: `unclassified`. This classification is inventory metadata, not proof that a capability is implemented or tested.
 
 The local baseline directory contains versioned shared coding, testing, documentation, and loop engineering standards. `.engineering-governance.lock.json` records hashes of the installed package. The control plane can preview upgrades and detect drift without replacing project business specifications.
 

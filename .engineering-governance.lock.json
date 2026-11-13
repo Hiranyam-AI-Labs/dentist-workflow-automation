@@ -1,25 +1,33 @@
 {
-  "baseline_version": "2026.11.11.1",
+  "baseline_version": "2026.11.13.1",
   "files": {
     "AGENTS.md": {
       "kind": "block",
-      "sha256": "6629444fca6aee04572d9ae9bdc1f5c29cd682510429ead2e2ef1c0036436872"
+      "sha256": "c215bd347121b1259168b684143f2c3f5afa5ed74cd1e7106751431f647251b4"
     },
     "CLAUDE.md": {
       "kind": "block",
-      "sha256": "6629444fca6aee04572d9ae9bdc1f5c29cd682510429ead2e2ef1c0036436872"
+      "sha256": "c215bd347121b1259168b684143f2c3f5afa5ed74cd1e7106751431f647251b4"
     },
     "GEMINI.md": {
       "kind": "block",
-      "sha256": "6629444fca6aee04572d9ae9bdc1f5c29cd682510429ead2e2ef1c0036436872"
+      "sha256": "c215bd347121b1259168b684143f2c3f5afa5ed74cd1e7106751431f647251b4"
+    },
+    "docs/engineering/HANDOFF_TEMPLATE.md": {
+      "kind": "file",
+      "sha256": "ae9f9e996dbb85255abc2cb8724a98e74485551d129432fad324b1e95065f80f"
     },
     "docs/engineering/LOOP-ENGINEERING.md": {
       "kind": "file",
-      "sha256": "6e0b9457f3f610c1f6636e1065ced54c36940a88ec4705899634b01b0b3601e0"
+      "sha256": "be714b1f484144ae7e69bcab4159b3e8e66e249b3495f787b5a65f6635fa3237"
     },
     "docs/engineering/TESTING_STRATEGY.md": {
       "kind": "file",
-      "sha256": "3ff0e157b4d08c20d58f2664337c91616c64ecc13e6b6173847a5761b60791ce"
+      "sha256": "c65a0781221c3661caa4649d795034d1a3704cd91554f26263699a7316b07630"
+    },
+    "docs/engineering/baseline/agent-interoperability-standard.md": {
+      "kind": "file",
+      "sha256": "6dc6101ab4ff0312a044cba3eb035a628cf8730ba1d7842cdfb638de81eeed5f"
     },
     "docs/engineering/baseline/ai-automation-standards.md": {
       "kind": "file",
@@ -75,7 +83,7 @@
     },
     "docs/engineering/baseline/devops-standards.md": {
       "kind": "file",
-      "sha256": "b6727510d47531ed89613a9fb8b452b1d172e294ec6374a31d2f1eea7fb2e7eb"
+      "sha256": "173f323f3016204fe5f89d6662faf1120ca83cdb8e286641be11f234f5dd2355"
     },
     "docs/engineering/baseline/documentation-standards.md": {
       "kind": "file",
@@ -107,7 +115,7 @@
     },
     "docs/engineering/baseline/loop-engineering-standard.md": {
       "kind": "file",
-      "sha256": "65e31c2ad937f22432752f7fbeec9e1c0023689eac774182a3137d38bde50891"
+      "sha256": "f2f052cc6da8e112fb98ff860b0a422450c1a2b3f300332d6884586b2e464b1a"
     },
     "docs/engineering/baseline/luxury-web-factory-standards.md": {
       "kind": "file",
@@ -163,7 +171,7 @@
     },
     "docs/engineering/baseline/sources/openspec/specs/engineering-governance-spec.md": {
       "kind": "file",
-      "sha256": "7bdc6b989805513704e852999afe25d7da18f19bce62cf6b8e0b67394d5a8d8c"
+      "sha256": "c393dc909fd8893ef71faa61f8da3c4d781c859e57a049e7ceda004b2203c9c9"
     },
     "docs/engineering/baseline/sources/openspec/specs/native-ai-image-generation-spec.md": {
       "kind": "file",
@@ -187,15 +195,15 @@
     },
     "docs/engineering/baseline/sources/registry/task-recipes.json": {
       "kind": "file",
-      "sha256": "e4ed28acd865d4d70cca82aa2ff06beeaed9d8157cd39e03bd08621be1ca601f"
+      "sha256": "b73f23cf8cb16ff577774a4eabc874a013773cc2ee47e5db31fd6f00e06c2d71"
     },
     "docs/engineering/baseline/sources/registry/testing-policy.json": {
       "kind": "file",
-      "sha256": "6b70246f56a1a4a5dff3e8c0298ea1835687e115b1acb4ede135ad90fe39ba61"
+      "sha256": "a4458ef9659fc246fc696c1062ea3a28de5b6b037fb0ce220ff1509bc82e13a0"
     },
     "docs/engineering/baseline/testing-standards.md": {
       "kind": "file",
-      "sha256": "799bdc611f22ae343fa2af778740ab202630e81b910159488d700465c9d0d54b"
+      "sha256": "7e4effa4526872f7fbc4a9eb5d0b4be7f3f5032658fae8283e56f7cef58e36a4"
     },
     "docs/engineering/baseline/toolchain-and-capability-standard.md": {
       "kind": "file",
@@ -215,7 +223,7 @@
     },
     "openspec/specs/engineering-governance.md": {
       "kind": "file",
-      "sha256": "9b832f81eaa01993ebe75ad0bf7bb623d248de876dcdd89094498880bfc2ec42"
+      "sha256": "be40ba2202a2d155355cd268373c032abf72f694f35f3089b76f040ea8afc588"
     }
   },
   "generator": "hiranyam-engineering-governance-v1",
@@ -226,14 +234,15 @@
     "openspec/decisions/ADR-0029-versioned-engineering-governance.md": "9daadc50c780b0a8ad36cc27cd8251ccdfd0f2b155cb28e2f926a97271090502",
     "openspec/decisions/ADR-0030-developer-owned-dual-mode-testing.md": "00a0340b12876dbaebd1019cd924274deb6af13f5b1eff602125067117772b2a",
     "openspec/specs/developer-handover-standard.md": "32e0ebf85b73d77ef3f746f73e40865b56876b330e731ca8db7b9e93f6f223d8",
-    "openspec/specs/engineering-governance-spec.md": "67466c779c4e673c4239b09138c994f87af4b8c6b56c9fe2b92cbe8727856388",
+    "openspec/specs/engineering-governance-spec.md": "b6460771ed88e75058e83076414d4daa2ce3281d6e2d21a96a80bfa323dea65c",
     "openspec/specs/native-ai-image-generation-spec.md": "c994f700e1af36726576a436d39ee30a4d08ee0a340bd8a1864c6cf7eb7f09e3",
     "openspec/specs/project-structure-and-deployment-standard.md": "c5c10a9e6a8c3ba0a25c451622268dc80e97cf3bce2286b9cb21aaa4aa7d98c8",
     "openspec/specs/single-prompt-engineering-standard.md": "c0f08b4ef012059da5784106c5e19ac6b0d5541e5ce576dfc8ced2d4059673ce",
     "openspec/specs/workflow-execution-diagnostics-spec.md": "fae9edee0abd98bb763eeb859e90efa184af7df2a1332ea9cca7e5ed525db394",
     "registry/project-aliases.json": "7d9946260693a57c3bf93f2d1cb66c1e9016892502a5478ec580725c0783e3d5",
-    "registry/task-recipes.json": "e4ed28acd865d4d70cca82aa2ff06beeaed9d8157cd39e03bd08621be1ca601f",
-    "registry/testing-policy.json": "6b70246f56a1a4a5dff3e8c0298ea1835687e115b1acb4ede135ad90fe39ba61",
+    "registry/task-recipes.json": "b73f23cf8cb16ff577774a4eabc874a013773cc2ee47e5db31fd6f00e06c2d71",
+    "registry/testing-policy.json": "a4458ef9659fc246fc696c1062ea3a28de5b6b037fb0ce220ff1509bc82e13a0",
+    "standards/agent-interoperability-standard.md": "6dc6101ab4ff0312a044cba3eb035a628cf8730ba1d7842cdfb638de81eeed5f",
     "standards/ai-automation-standards.md": "b051d19a764b9d6315c25a401a75dce7a999a0cc4e55f4db3d5741b68c4764d6",
     "standards/ai-chatbot-training-kill-critic-standard.md": "f659591d2fdd3121e5af8768e8973db7ac6a644a322fa59e5a68cc38f62d6972",
     "standards/ai-image-and-visual-design-standards.md": "4749f7816b9513b6f202bbfb994092598770f0c6dcb190be79f570364c270861",
@@ -247,7 +256,7 @@
     "standards/credential-isolation-standards.md": "8bacd5086c8728e4d9142d72b7f00800a82702c342ccb07e561c1a0a58fa476c",
     "standards/database-standards.md": "fb2aa45d09294b1b3d3e51bd5af3cadadd61f8edc5768482666461779fb8b1bb",
     "standards/developer-testing-strategy.md": "19b75d4b3b60f17af155afea417d4ea66feacd4fa9765b1c5b7a58661f418a5c",
-    "standards/devops-standards.md": "b6727510d47531ed89613a9fb8b452b1d172e294ec6374a31d2f1eea7fb2e7eb",
+    "standards/devops-standards.md": "173f323f3016204fe5f89d6662faf1120ca83cdb8e286641be11f234f5dd2355",
     "standards/documentation-standards.md": "72a006009ad9ba8eb9ef1b1861744063d703f507970a6dfb7d59354d5b05632e",
     "standards/domain-workflow-blueprints.md": "28b8576539994c80a19a95052a6a075f333e816a3556cfbcdb0bbb424ba7aa6c",
     "standards/engineering-standards.md": "0db5eb7b97f5a007b8db239e7bd0c82e84bf5ad8e428afef7b172073b6b9a95b",
@@ -255,7 +264,7 @@
     "standards/git-standards.md": "6e25d998409729f0cbcc8513623d9fc3323f52ef6f35e3aa91cef3a55a16e2c8",
     "standards/hiranyam-brand-identity-spec.md": "d57fd4c14eba5fbf381fac5eb1e82749dc716ebd2fa033f0054ff66e1f5bd3e2",
     "standards/i18n-standards.md": "ff5b791dafafecac5fb750895e96cb64aec0b88328e091d216307544ed9773e6",
-    "standards/loop-engineering-standard.md": "65e31c2ad937f22432752f7fbeec9e1c0023689eac774182a3137d38bde50891",
+    "standards/loop-engineering-standard.md": "f2f052cc6da8e112fb98ff860b0a422450c1a2b3f300332d6884586b2e464b1a",
     "standards/luxury-web-factory-standards.md": "ef11d7bb9227f457a9e5b5a043b0499c09e72fc1663f2fb4d884ac0eb74d264f",
     "standards/media-asset-strategy.md": "95bf6a6ab9b28e8f8800d82f2f3240d75ad66f20a54eda15f8ef6fec448f5fb7",
     "standards/mobile-standards.md": "e506f9524cf89b8af3c663c135389cf6e284f8c2081c4f35830ef9e97e772baf",
@@ -265,13 +274,14 @@
     "standards/proposal-letterhead-standard.md": "3bda9682b3028796781eacc5f844c8e861ba268b37cc5886b50313472c4f28f2",
     "standards/reusable-components-standards.md": "51331aa36519571d4dea98c77bffcaff74428a373d3eb6e5a52f5e4880986493",
     "standards/security-standards.md": "714e9f62a17f8ebd438ca3efedf3581c1b9a2f1b18862a3f6187b6952425b211",
-    "standards/testing-standards.md": "799bdc611f22ae343fa2af778740ab202630e81b910159488d700465c9d0d54b",
+    "standards/testing-standards.md": "7e4effa4526872f7fbc4a9eb5d0b4be7f3f5032658fae8283e56f7cef58e36a4",
     "standards/toolchain-and-capability-standard.md": "dbd39737aa914e5f9d17e8f19d427b49a6079245fd2b5978ee1dcef97f5797d8",
     "standards/ui-ux-design-standards.md": "57cf584272ade596a02412ded8411385718004ff605a5b6f26731efa5dd4b0a8",
     "standards/whatsapp-messaging-compliance-standards.md": "da2c0f3c565280309ce7d6c8bd0772c1fef9fe52c29c8044920c1eb20b94d571",
     "standards/whatsapp-support-standards.md": "7ad9a8e1c1ad6b2c03443696c4800ab7f6361e2324c31169fd69102e1ca29c7b",
-    "templates/engineering-governance/agent-entry.md": "932cd4eb821d43b9b07b8854068e31a636e48f9afed5a23e61dd2bbf24be75a5",
+    "templates/engineering-governance/agent-entry.md": "6f078b283566abe05ac0c2dd9ea1bda4f816c5d0acf6085c2651a127d6bea3d1",
     "templates/engineering-governance/engineering-governance.md": "4f4b72e16ea937a22f96b64ea34a7a4be2f11ec1007aa6719ce472b077164913",
+    "templates/engineering-governance/handoff.md": "04af72fcfbfe4a8961fc38d2223c80fed5b62bfb35eba341521b41a57107a5c6",
     "templates/engineering-governance/loop-engineering.md": "99666c5dbcd995e02e9e1c34ec8d3812eebbf4043e2d8d41ea5af3335eb71985",
     "templates/engineering-governance/testing-strategy.md": "3ee8389be59729c64853c5731f5bdd7a490bf1d8ca868fa51dcaeb203e6794fa"
   }

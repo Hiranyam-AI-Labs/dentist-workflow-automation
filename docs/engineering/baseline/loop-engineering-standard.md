@@ -1,6 +1,6 @@
 # Loop Engineering Standard
 
-Baseline: `2026.11.11.1` · Effective: 2026-11-11
+Baseline: `2026.11.13.1` · Effective: 2026-11-13
 
 Loop engineering turns a business request into a verified change, then turns repeated effort into reusable automation. The loop is complete only when its applicable acceptance criteria have evidence. A confidence score or an agent's assertion is not verification.
 
@@ -30,10 +30,10 @@ Use one state for each gate, with a reason and evidence reference:
 | `PASS` | The stated check actually ran against identified inputs and met its acceptance criterion. |
 | `FAIL` | The check ran and did not meet its criterion. |
 | `BLOCKED` | A required check cannot run because a named prerequisite is unavailable. Record who or what can unblock it. |
-| `NOT RUN` | The check has not been attempted. It is not evidence of success. |
-| `NOT APPLICABLE` | The capability or risk does not exist in this change/product; give the factual reason. |
+| `NOT_RUN` | The check has not been attempted. It is not evidence of success. |
+| `NOT_APPLICABLE` | The capability or risk does not exist in this change/product; give the factual reason. |
 
-A required `FAIL`, `BLOCKED`, or `NOT RUN` gate prevents claiming the corresponding release or deployment is verified. A successful documentation or build check does not prove the whole application is defect-free. State the achieved scope and its remaining limits.
+A required `FAIL`, `BLOCKED`, or `NOT_RUN` gate prevents claiming the corresponding release or deployment is verified. A successful documentation or build check does not prove the whole application is defect-free. State the achieved scope and its remaining limits.
 
 ## Resume without rediscovery
 
